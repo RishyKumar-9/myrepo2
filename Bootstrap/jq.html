@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <!-- <img src="Image/car 11-jpg.jpeg" id="img" class="m-3" height="300px" width="350px" alt="">
+    <br>
+    <button id="hidebtn" class="btn btn-primary m-3">Hide</button>
+    <button id="showbtn" class="btn btn-success m-3">Show</button>
+    <button id="togglebtn" class="btn btn-warning m-3">Toggle</button>
+    <br>
+    <button id="fadeoutbtn" class="btn btn-primary m-3">FadeOut</button>
+    <button id="fadeinbtn" class="btn btn-success m-3">FadeIn</button>
+    <button id="fadetogglebtn" class="btn btn-warning m-3">FadeToggle</button> --> 
+
+    <button id="animate" style="margin: 10px;background-color: brown;color: white;">Animate</button>
+    <div style="background-color: #4648b4;height: 100px;width: 100px;position: absolute;margin: 10px;">
+
+    </div>
+ 
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+    $(document).ready(function(){
+        // $("#hidebtn").click(function(){
+        //     $("#img").hide();
+        // })
+        // $("#showbtn").click(function(){
+        //     $("#img").show();
+        // })
+        // $("#togglebtn").click(function(){
+        //     $("#img").toggle();
+        // })
+        // $("#fadeoutbtn").click(function(){
+        //     $("#img").fadeOut();
+        // })
+        // $("#fadeinbtn").click(function(){
+        //     $("#img").fadeIn();
+        // })
+        // $("#fadetogglebtn").click(function(){
+        //     $("#img").fadeToggle();
+        // })
+
+        $("#animate").click(function(){
+            $("div").animate({
+                left: '250px',
+                opacity: '0.5',
+                height: '150px',
+                width: '150px'
+            })
+        })
+
+        $("button").click(function(){
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+  });
+
+    })
+
+
+</script>
+
+</html>
